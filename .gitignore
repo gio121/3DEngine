@@ -1,0 +1,71 @@
+# --- Archivos y Directorios Generados por el Sistema ---
+
+# Archivos de sistema (macOS)
+.DS_Store                 # Metadatos de macOS innecesarios
+Thumbs.db                 # Metadatos de Windows innecesarios
+desktop.ini               # Configuraciones de escritorio de Windows
+*.log                     # Archivos de log temporales (genéricos)
+
+# --- Archivos y Carpetas de Visual Studio ---
+
+# Carpetas de salida de compilación de Visual Studio
+*.suo                      # Opciones de usuario de la solución
+*.user                     # Configuración específica del usuario
+*.vcxproj.user             # Opciones de usuario del proyecto Visual Studio
+*.vcxproj.*.user           # Configuraciones de usuario específicas del proyecto
+*.pdb                      # Archivos de depuración, son grandes y específicos del entorno de compilación
+*.ipch                     # Archivos precompilados para IntelliSense
+.vscode                    # Configuración específica del entorno de desarrollo
+.vs                        # Configuración del entorno de Visual Studio (incluye .suo, .VC.db y cachés)
+*.obj                      # Archivos objeto generados durante la compilación
+
+# Carpetas de configuración
+bin/                       # Binarios generados durante la compilación
+out/                       # Directorio de salida configurado en `CMakeSettings.json`
+
+# --- Archivos Generados por CMake ---
+
+CMakeFiles/                # Carpeta de CMake con archivos temporales de la configuración
+CMakeCache.txt             # Caché de configuraciones de CMake
+cmake_install.cmake        # Archivo temporal de instalación
+build/                     # Directorio de compilación (usualmente temporal y específico del entorno)
+Makefile                   # Archivo generado por CMake para Make
+
+# --- Dependencias Externas ---
+
+# Dependencias clonadas, como PhysX, pueden generar archivos grandes que no queremos incluir en el control de versiones
+external/PhysX/physx/bin/          # Binarios de PhysX generados
+external/PhysX/physx/lib/          # Bibliotecas estáticas de PhysX generadas
+external/PhysX/build/              # Carpeta de compilación de PhysX
+
+# --- Archivos Binarios del Motor y Recursos Temporales ---
+
+# Archivos de recursos y binarios
+*.dll                     # Archivos de bibliotecas dinámicas (Windows)
+*.lib                     # Bibliotecas estáticas (Windows)
+*.so                      # Archivos de bibliotecas dinámicas (Linux)
+*.dylib                   # Archivos de bibliotecas dinámicas (macOS)
+*.exe                     # Archivos ejecutables de Windows
+
+# Recursos del motor que pueden cambiar frecuentemente o ser demasiado grandes
+assets/temp/              # Archivos de prueba o temporales dentro de `assets`
+*.fbx                     # Archivos de modelos 3D pesados, a menos que sea necesario un modelo en específico
+
+# --- Archivos de Configuración Locales y Variables de Entorno ---
+
+# Configuración específica del entorno de desarrollo
+CMakeSettings.json         # Configuración de CMake específica del entorno de Visual Studio
+*.env                      # Archivos de configuración de entorno (variables locales)
+
+# --- Archivos de Scripting y Entorno de Ejecución ---
+
+# Archivos de compilación de scripts
+scripts/*.csproj           # Archivos de proyecto de C# (configuración específica del entorno)
+*.dll                      # Bibliotecas compiladas de scripts C#
+*.pdb                      # Archivos de depuración de C# (innecesarios en control de versiones)
+
+# --- Archivos de Backup y Temporales ---
+
+*.tmp                      # Archivos temporales
+*.bak                      # Archivos de respaldo automáticos
+*.swp                      # Archivos temporales de edición de Vim
